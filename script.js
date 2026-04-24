@@ -28,7 +28,6 @@ background:#0a0a0a;
 color:#fff;
 }
 
-/* HEADER */
 header{
   position:fixed;
   top:0;
@@ -37,27 +36,25 @@ header{
   align-items:center;
   justify-content:space-between;
   padding:2px 25px;
-  height: 60px; /* vaste hoogte = strakker resultaat */
+  height: 60px;
   background:rgba(0,0,0,0.85);
   backdrop-filter:blur(7px);
   z-index:1000;
   overflow: visible;
 }
 
-/* LINKS (logo + tekst) */
 .left{
   display:flex;
   align-items:center;
   gap:12px;
 }
 
-/* LOGO half uit header */
 .logo img{
   width:90px;
   height:90px;
   border-radius:50%;
 
-  transform: translateY(20px); /* iets minder hoog laten steken */
+  transform: translateY(20px);
 
   border:3px solid gold;
 
@@ -71,7 +68,6 @@ header{
   font-size:16px;
 }
 
-/* duwt alles naar rechts vanaf hier */
 nav{
   margin-left:auto;
   display:flex;
@@ -85,10 +81,9 @@ nav{
   color: gold;
   text-transform:uppercase;
 
-  letter-spacing: 1px; /* 👈 dit doet het effect */
+  letter-spacing: 1px;
 }
 
-/* taal ernaast houden */
 .lang-wrapper{
   margin-left:15px;
   display:flex;
@@ -107,9 +102,6 @@ color:gold;
 transform:translateY(-2px);
 }
 
-/* HERO */
-
-/* 📱 Mobiel (zoals je nu hebt) */
 .hero {
   height: 100vh;
   display: flex;
@@ -122,11 +114,10 @@ transform:translateY(-2px);
               url("images/images/bg.jpg") center/cover no-repeat;
 }
 
-/* 💻 Desktop */
 @media (min-width: 768px) {
   .hero {
-    align-items: center;   /* centeren */
-    padding-top: 0;        /* padding weg */
+    align-items: center;
+    padding-top: 0;
   }
 }
 .hero h1{
@@ -139,7 +130,6 @@ color:#ccc;
 margin-top:10px;
 }
 
-/* BUTTON */
 .btn{
 background:gold;
 padding:12px 22px;
@@ -156,7 +146,6 @@ transform:scale(1.05);
 box-shadow:0 10px 25px rgba(255,215,0,0.4);
 }
 
-/* SOCIAL */
 .container{
 display:flex;
 justify-content:center;
@@ -205,7 +194,6 @@ margin-bottom:30px;
 font-size:2rem;
 }
 
-/* CARDS */
 .grid{
 display:grid;
 gap:20px;
@@ -365,7 +353,6 @@ color:white;
 outline:none;
 }
 
-/* BUTTON */
 button{
 background:gold;
 padding:12px;
@@ -380,7 +367,6 @@ transform:scale(1.03);
 box-shadow:0 10px 25px rgba(255,215,0,0.4);
 }
 
-/* WHATSAPP FLOAT */
 .whatsapp{
 position:fixed;
 bottom:0px;
@@ -392,7 +378,6 @@ color:white;
 text-decoration:none;
 }
 
-/* FOOTER */
 footer{
 text-align:center;
 padding:30px;
@@ -400,7 +385,6 @@ color:#777;
 font-size:14px;
 }
 
-/* CONTACT SECTION */
 .contact-section{
 text-align:center;
 margin-top:25px;
@@ -419,7 +403,6 @@ align-items:center;
 gap:15px;
 }
 
-/* CONTACT ITEM (FIXED & CLEAN) */
 .contact-item{
 width:55px;
 height:55px;
@@ -433,7 +416,6 @@ color:white;
 transition:0.3s ease;
 }
 
-/* ICON CENTER FIX */
 .contact-item i{
 font-size:27px;
 display:flex;
@@ -443,7 +425,6 @@ width:100%;
 height:100%;
 }
 
-/* COLORS */
 .contact-item.tiktok{
 background:#000;
 }
@@ -456,14 +437,12 @@ background:radial-gradient(circle at 30% 30%, #feda75, #fa7e1e, #d62976, #962fbf
 background:#25D366;
 }
 
-/* HOVER */
 .contact-item:hover{
 transform:translateY(-8px) scale(1.1);
 filter:brightness(1.2);
 box-shadow:0 10px 25px rgba(255,215,0,0.4);
 }
 
-/* TOOLTIP */
 .contact-item::after{
 content:attr(data-name);
 position:absolute;
@@ -581,39 +560,6 @@ section.active{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* From Uiverse.io by yeisonordonez */ 
 .container {
   position: absolute;
   width: 380px;
@@ -1566,7 +1512,7 @@ section.active{
 
 .car-wrapper {
   position: absolute;
-  top: 200px; /* 👈 hier omhoog */
+  top: 200px;
   left: 1030px;
   width: 380px;
   height: 380px;
