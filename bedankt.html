@@ -10,6 +10,25 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
+<header>
+
+  <div class="left">
+    <div class="logo">
+      <a href="index.html">
+        <img src="logor.jpeg" alt="logo">
+      </a>
+    </div>
+
+
+<nav>
+  <a href="#home" data-key="nav_home">Home</a>
+  <a href="#lease" data-key="nav_lease">Lease</a>
+  <a href="#form" data-key="nav_apply">Aanvraag</a>
+</nav>
+
+</header>
+
+
 <div class="car-wrapper">
 
   <div class="car-container">
@@ -106,7 +125,6 @@ a{
   display:inline-block;
   margin-top:20px;
   padding:10px 20px;
-  background:gold;
   color:black;
   text-decoration:none;
   border-radius:6px;
@@ -121,7 +139,7 @@ a{
   <h1>Bedankt voor je aanvraag!</h1>
   <p>We nemen zo snel mogelijk contact met je op.</p>
 
-  <a href="index.html" onclick="resetForm()">Terug naar site</a>
+<a href="index.html" class="btn btn-back" onclick="resetForm()">Terug naar site</a>
 </div>
 
 <script>
