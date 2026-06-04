@@ -365,6 +365,11 @@ color:white;
 outline:none;
 }
 
+select option {
+  background: #1a1a1a;
+  color: white;
+}
+
 /* BUTTON */
 button{
 background:gold;
@@ -557,18 +562,6 @@ section{
   transition: all 0.7s cubic-bezier(.2,.8,.2,1);
 }
 
-section.active{
-  opacity:1;
-  transform:scale(1);
-  filter:blur(0);
-}
-
-section{
-  opacity:0.2;
-  transform:scale(0.96);
-  filter:blur(6px);
-  transition: all 0.7s cubic-bezier(.2,.8,.2,1);
-}
 
 section.active{
   opacity:1;
@@ -576,7 +569,16 @@ section.active{
   filter:blur(0);
 }
 
+.reset-animation{
+  animation-play-state: running;
+}
 
+.track{
+  display:flex;
+  width:max-content;
+  gap:80px;
+  will-change: transform;
+}
 
 
 
@@ -1738,5 +1740,174 @@ img {
 
 .wheel-ring1 {
   animation: spinning 1s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   INFO BAR
+========================= */
+
+.info-bar{
+  width:100%;
+  background:#c8a96b;
+  overflow:hidden;
+  padding:14px 0;
+}
+
+.ticker{
+  width:100%;
+  overflow:hidden;
+}
+
+.track{
+  display:flex;
+  width:max-content;
+  gap:80px;
+}
+
+/* groep */
+.group{
+  display:flex;
+  align-items:center;
+  gap:80px;
+  white-space:nowrap;
+  flex-shrink:0;
+}
+
+/* tekst */
+.group span{
+  color:#000;
+  font-family:"Poppins",sans-serif;
+  font-weight:700;
+  font-size:15px;
+  white-space:nowrap;
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width:769px){
+
+  .track{
+    justify-content:center;
+    width:100%;
+    animation:none;
+  }
+
+  /* duplicate groups weg op desktop */
+  .group:nth-child(3),
+  .group:nth-child(4){
+    display:none;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+  .ticker{
+    overflow:hidden;
+    width:100%;
+  }
+
+  .track{
+    display:flex;
+    width:max-content;
+    animation:tickerMove 30s linear infinite;
+  }
+
+  .group{
+    display:flex;
+    align-items:center;
+    gap:80px;
+    white-space:nowrap;
+    flex-shrink:0;
+    min-width:max-content;
+  }
+
+  html[dir="rtl"] .track{
+    animation:tickerMoveRTL 30s linear infinite;
+  }
+
+  @keyframes tickerMove{
+    from{
+      transform:translateX(0%);
+    }
+    to{
+      transform:translateX(-50%);
+    }
+  }
+
+  @keyframes tickerMoveRTL{
+    from{
+      transform:translateX(-5%);
+    }
+    to{
+      transform:translateX(80%);
+    }
+  }
+}
+
+html[dir="rtl"] body{
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] nav{
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .left{
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .form-row{
+  flex-direction: row-reverse;
 }
 
