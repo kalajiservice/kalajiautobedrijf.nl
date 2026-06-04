@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kalaji Automotive</title>
 
-<link rel="icon" href="logor.jpeg">
+<link rel="icon" type="image/jpeg" sizes="32x32" href="logor.jpeg">
 <link rel="apple-touch-icon" href="logor.jpeg">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
@@ -80,6 +80,121 @@
   </div>
   
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="info-bar">
+  <div class="ticker">
+    <div class="track">
+
+      <div class="group">
+        <span data-key="ticker_lease">✔ Rentevrije leasing</span>
+        <span data-key="ticker_transparent">✔ Transparant</span>
+      </div>
+
+      <div class="group">
+        <span data-key="ticker_sharia">✔ Islamitische principes</span>
+        <span data-key="ticker_fast">✔ Binnen 24 uur geregeld</span>
+      </div>  
+
+      <!-- duplicate (belangrijk voor loop) -->
+      <div class="group">
+        <span data-key="ticker_lease">✔ Rentevrije leasing</span>
+        <span data-key="ticker_transparent">✔ Transparant</span>
+      </div>
+
+      <div class="group">
+        <span data-key="ticker_sharia">✔ Islamitische principes</span>
+        <span data-key="ticker_fast">✔ Binnen 24 uur geregeld</span>
+      </div>
+
+      <!-- duplicate (belangrijk voor loop) -->
+      <div class="group">
+        <span data-key="ticker_lease">✔ Rentevrije leasing</span>
+        <span data-key="ticker_transparent">✔ Transparant</span>
+      </div>
+
+      <div class="group">
+        <span data-key="ticker_sharia">✔ Islamitische principes</span>
+        <span data-key="ticker_fast">✔ Binnen 24 uur geregeld</span>
+      </div>
+
+      <!-- duplicate (belangrijk voor loop) -->
+      <div class="group">
+        <span data-key="ticker_lease">✔ Rentevrije leasing</span>
+        <span data-key="ticker_transparent">✔ Transparant</span>
+      </div>
+
+      <div class="group">
+        <span data-key="ticker_sharia">✔ Islamitische principes</span>
+        <span data-key="ticker_fast">✔ Binnen 24 uur geregeld</span>
+      </div>
+
+      <!-- duplicate (belangrijk voor loop) -->
+      <div class="group">
+        <span data-key="ticker_lease">✔ Rentevrije leasing</span>
+        <span data-key="ticker_transparent">✔ Transparant</span>
+      </div>
+
+      <div class="group">
+        <span data-key="ticker_sharia">✔ Islamitische principes</span>
+        <span data-key="ticker_fast">✔ Binnen 24 uur geregeld</span>
+      </div>      <!-- duplicate (belangrijk voor loop) -->
+      <div class="group">
+        <span data-key="ticker_lease">✔ Rentevrije leasing</span>
+        <span data-key="ticker_transparent">✔ Transparant</span>
+      </div>
+
+      <div class="group">
+        <span data-key="ticker_sharia">✔ Islamitische principes</span>
+        <span data-key="ticker_fast">✔ Binnen 24 uur geregeld</span>
+      </div>      <!-- duplicate (belangrijk voor loop) -->
+      <div class="group">
+        <span data-key="ticker_lease">✔ Rentevrije leasing</span>
+        <span data-key="ticker_transparent">✔ Transparant</span>
+      </div>
+
+      <div class="group">
+        <span data-key="ticker_sharia">✔ Islamitische principes</span>
+        <span data-key="ticker_fast">✔ Binnen 24 uur geregeld</span>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -204,19 +319,75 @@
   </div>
 
   <div class="form-row">
-    <i class="fa fa-euro-sign"></i>
-    <input name="budget" data-key-placeholder="budget" placeholder="Budget">
+    <i class="fa fa-building"></i>  
+    <input name="Kvk_nummer" data-key-placeholder="Kvk_nummer" placeholder="Kvk_nummer" required>
   </div>
 
-  <div class="form-row">
-    <i class="fa fa-calendar"></i>
-    <input name="looptijd" data-key-placeholder="duration" placeholder="Looptijd">
-  </div>
+<div class="form-row">
+  <i class="fa fa-clock"></i>
+
+  <select name="company_age">
+    <option value="" disabled selected data-key="company_age">
+      Hoe oud is uw bedrijf?
+    </option>
+
+    <option value="0-1" data-key="age_0_1">0 - 1 jaar</option>
+    <option value="1-2" data-key="age_1_2">1 - 2 jaar</option>
+    <option value="3-5" data-key="age_3_5">3 - 5 jaar</option>
+    <option value="5-10" data-key="age_5_10">5 - 10 jaar</option>
+    <option value="10+" data-key="age_10_plus">10+ jaar</option>
+  </select>
+</div>
+
+<div class="form-row">
+  <i class="fa fa-euro-sign"></i>
+
+  <input 
+    name="budget"
+    data-key-placeholder="budget_month"
+    placeholder="Budget per maand"
+  >
+</div>
 
   <div class="form-row">
-    <i class="fa fa-road"></i>
-    <input name="kilometers" data-key-placeholder="kilometers" placeholder="Kilometers per jaar">
-  </div>
+  <i class="fa fa-money-bill"></i>
+
+
+  <select name="downpayment">
+    <option value="" disabled selected data-key="downpayment">
+      Gewenste aanbetaling
+    </option>
+
+    <option value="0">€0</option>
+    <option value="500">€500</option>
+    <option value="1000">€1.000</option>
+    <option value="2500">€2.500</option>
+    <option value="5000">€5.000</option>
+    <option value="10000">€10.000+</option>
+  </select>
+</div>
+
+
+<div class="form-row">
+  <i class="fa fa-calendar"></i>
+
+  <select name="duration_select">
+    <option value="" disabled selected data-key="duration_select">
+      Looptijd
+    </option>
+
+    <option value="1" data-key="duration_1">1 jaar</option>
+    <option value="2" data-key="duration_2">2 jaar</option>
+    <option value="3" data-key="duration_3">3 jaar</option>
+    <option value="4" data-key="duration_4">4 jaar</option>
+    <option value="5" data-key="duration_5">5 jaar</option>
+    <option value="6" data-key="duration_6">6 jaar</option>
+    <option value="7" data-key="duration_7">7 jaar</option>
+    <option value="8" data-key="duration_8">8 jaar</option>
+    <option value="9" data-key="duration_9">9 jaar</option>
+    <option value="10" data-key="duration_10">10 jaar</option>
+  </select>
+</div>
 
   <div class="form-row">
     <i class="fa fa-car"></i>
