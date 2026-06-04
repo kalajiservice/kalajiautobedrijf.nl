@@ -31,6 +31,51 @@ const translations = {
     car_business_desc: "Ideaal voor ondernemers",
     car_truck_title: "Vrachtwagen",
     car_truck_desc: "Voor professioneel werk",
+
+    ticker_lease: "✔ Rentevrije leasing",
+    ticker_transparent: "✔ Transparant",
+    ticker_sharia: "✔ Islamitische principes",
+    ticker_fast: "✔ Binnen 24 uur geregeld",
+
+
+
+    age_0_1: "0 - 1 jaar",
+    age_1_2: "1 - 2 jaar",
+    age_3_5: "3 - 5 jaar",
+    age_5_10: "5 - 10 jaar",
+    age_10_plus: "10+ jaar",
+
+
+    Kvk_nummer: "Kvk-nummer",
+    company_age: "Hoe oud is uw bedrijf?",
+    downpayment: "Gewenste aanbetaling",
+    duration_select: "Looptijd",
+
+    footer_contact: "Contact",
+    footer_terms: "Algemene Voorwaarden",
+    footer_privacy: "Privacybeleid",
+
+
+
+
+    duration_1: "1 jaar",
+    duration_2: "2 jaar",
+    duration_3: "3 jaar",
+    duration_4: "4 jaar",
+    duration_5: "5 jaar",
+    duration_6: "6 jaar",
+    duration_7: "7 jaar",
+    duration_8: "8 jaar",
+    duration_9: "9 jaar",
+    duration_10: "10 jaar",
+
+
+    budget_month: "Budget per maand",
+
+
+
+
+    
     halal_title: "Waarom Halal Lease?",
     halal_sharia: "Sharia-proof",
     halal_sharia_desc: "100% islamitisch verantwoord",
@@ -68,6 +113,56 @@ const translations = {
     contact_title: "Contact us",
     lease_title: "Lease options",
     car_person_title: "Passenger car",
+
+
+    ticker_lease: "✔ Rent-free leasing",
+    ticker_transparent: "✔ Transparent",
+    ticker_sharia: "✔ Islamic principles",
+    ticker_fast: "✔ Within 24 hours arranged",
+
+
+    age_0_1: "0 - 1 years",
+    age_1_2: "1 - 2 years",
+    age_3_5: "3 - 5 years",
+    age_5_10: "5 - 10 years",
+    age_10_plus: "10+ years",
+
+
+
+    Kvk_nummer: "KVK-number of your company",
+    company_age: "How old is your company?",
+    downpayment: "Desired down payment",
+    duration_select: "Duration",
+
+    footer_contact: "Contact",
+    footer_terms: "Terms & Conditions",
+    footer_privacy: "Privacy Policy",
+
+
+
+
+    duration_1: "1 year",
+    duration_2: "2 years",
+    duration_3: "3 years",
+    duration_4: "4 years",
+    duration_5: "5 years",
+    duration_6: "6 years",
+    duration_7: "7 years",
+    duration_8: "8 years",
+    duration_9: "9 years",
+    duration_10: "10 years",
+
+
+
+    budget_month: "Monthly budget",
+
+
+
+
+
+
+
+
     car_person_desc: "Perfect for daily use",
     car_business_title: "Commercial vehicle",
     car_business_desc: "Ideal for entrepreneurs",
@@ -105,8 +200,61 @@ const translations = {
     nav_lease: "تقسيط",
     nav_apply: "طلب",
     hero_title: "Kalaji Automotive",
-    hero_subtitle: "تتقسيط فاخر وتنقل آمن",
+    hero_subtitle: "تقسيط فاخر وتنقل آمن",
     hero_button: "عرض تقسيط",
+
+
+    age_0_1: "0 - 1 سنة",
+    age_1_2: "1 - 2 سنة",
+    age_3_5: "3 - 5 سنوات",
+    age_5_10: "5 - 10 سنوات",
+    age_10_plus: "10+ سنوات",
+
+
+
+    ticker_lease: "✔ تقسيط بدون ربا",
+    ticker_transparent: "✔ شفاف",
+    ticker_sharia: "✔ مبادئ إسلامية",
+    ticker_fast: "✔ تواصل خلال 24 ساعة",
+
+    Kvk_nummer: "رقم السجل التجاري",
+    company_age: "كم عمر شركتك؟",
+    downpayment: "الدفعة الأولى المفضلة",
+    duration_select: "مدة العقد",
+
+
+
+
+
+
+
+    duration_1: "سنة واحدة",
+    duration_2: "سنتان",
+    duration_3: "3 سنوات",
+    duration_4: "4 سنوات",
+    duration_5: "5 سنوات",
+    duration_6: "6 سنوات",
+    duration_7: "7 سنوات",
+    duration_8: "8 سنوات",
+    duration_9: "9 سنوات",
+    duration_10: "10 سنوات",
+
+
+
+
+
+
+    budget_month: "الميزانية الشهرية",
+
+
+
+
+
+
+
+
+
+
     contact_title: "اتصل بنا",
     lease_title: "خيارات تقسيط",
     car_person_title: "سيارة خاصة",
@@ -122,7 +270,7 @@ const translations = {
     halal_interest_desc: "ادفع مقابل الاستخدام فقط",
     halal_transparent: "شفاف",
     halal_transparent_desc: "بدون تكاليف خفية",
-    halal_usage: "الاستخدام بدل الملكية",
+    halal_usage: "المالك الرئيسي من اليوم الاول",
     halal_usage_desc: "تدفع فقط للاستخدام",
     halal_fair: "اتفاقات عادلة",
     halal_fair_desc: "واضح وموثوق",
@@ -145,23 +293,35 @@ const translations = {
 function setLang(l){
   document.querySelectorAll("[data-key]").forEach(el=>{
     const key = el.dataset.key;
-    if(translations[l]?.[key]){
-      el.textContent = translations[l][key];
+    if(translations[lang]?.[key]){
+      el.textContent = translations[lang][key];
     }
   });
 
   document.querySelectorAll("[data-key-placeholder]").forEach(el=>{
     const key = el.dataset.keyPlaceholder;
-    if(translations[l]?.[key]){
-      el.placeholder = translations[l][key];
+    if(translations[lang]?.[key]){
+      el.placeholder = translations[lang][key];
     }
   });
 
-  document.body.dir = (l === "ar") ? "rtl" : "ltr";
+document.documentElement.setAttribute("dir", l === "ar" ? "rtl" : "ltr");
+document.documentElement.setAttribute("lang", l);
 
-  if(flag) flag.textContent = flags[l];
 
-  localStorage.setItem("lang", l);
+if (flag && flags[l]) {
+  flag.textContent = flags[l];
+}
+
+localStorage.setItem("lang", l);
+
+const track = document.querySelector(".track");
+
+track.classList.remove("reset-animation");
+
+void track.offsetWidth;
+
+track.classList.add("reset-animation");
 }
 
 if(btn && menu){
@@ -174,6 +334,15 @@ if(btn && menu){
       lang = opt.dataset.lang;
       menu.classList.remove("active");
       setLang(lang);
+
+      // force refresh ticker text
+document.querySelectorAll(".ticker span[data-key]").forEach(el => {
+  const key = el.dataset.key;
+
+  if (translations[lang]?.[key]) {
+    el.textContent = translations[lang][key];
+  }
+});
     });
   });
 
@@ -248,3 +417,12 @@ window.addEventListener("scroll", ()=>{
     sections[sections.length - 1].classList.add("active");
   }
 });
+
+
+
+
+
+
+
+
+
